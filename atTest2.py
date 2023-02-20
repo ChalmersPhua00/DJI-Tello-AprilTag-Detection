@@ -7,7 +7,7 @@ from pupil_apriltags import Detector
 import tellocontrol as control
 import math
 
-tookoff = False
+airborne = False
 
 control.init()
 drone = tello.Tello()
@@ -38,13 +38,13 @@ def getUserInputKey():
     if control.getKey("RIGHT"): yaw = speed
     if control.getKey("LEFT"): yaw = -speed
     if control.getKey("f"):
-        global tookoff
-        if tookoff:
+        global airborne
+        if airborne:
             drone.land()
-            tookoff = False
-        elif not tookoff:
+            airborne = False
+        elif not airborne:
             drone.takeoff()
-            tookoff = True
+            airborne = True
     return [left_right, forward_backward, up_down, yaw]
 
 def process_image(image, tags, targets):
