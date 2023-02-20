@@ -1,5 +1,5 @@
 # Drone-Localization-using-AprilTags
-AprilTag drone localization using computer vision libraries for Python (OpenCV, pupil-apriltags, etc).
+DJI Tello AprilTag detection using computer vision libraries for Python (OpenCV, pupil-apriltags, etc).
 The project uses DJI Tello
 
 atTest1.py --
