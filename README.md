@@ -1,5 +1,5 @@
-# Tello Drone AprilTag Detection
-DJI Tello AprilTag detection using computer vision libraries for Python (OpenCV, pupil-apriltags, etc).
+# DJI Tello AprilTag Detection
+Using computer vision libraries for Python (OpenCV, pupil-apriltags, etc).
 
 atTest1.py --
 A test for the AprilTag detector using webcam. Manually calibrate the distance measuring feature here.
